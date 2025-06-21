@@ -496,15 +496,15 @@ static void CALLBACK ALL_DRAW( void )
 	glPopMatrix();
 
 /* FPS同期処理 */
-#if 1
-  {
-    float tt = (float)timeGetTime();
-    float ts = tt / (1000.0/(float)FPS);
-    int tn = (int)((int)(ts+1) * (1000.0/(float)FPS));
-    if(tn > (int)tt){
-      Sleep(tn-(int)tt);
-    }
-  }
+#ifdef FPS
+  	{
+    		float tt = (float)timeGetTime();
+    		float ts = tt / (1000.0/(float)FPS);
+    		int tn = (int)((int)(ts+1) * (1000.0/(float)FPS));
+    		if(tn > (int)tt){
+      			Sleep(tn-(int)tt);
+    		}
+  	}
 #endif
 	glFlush();
 	auxSwapBuffers();
