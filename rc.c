@@ -256,59 +256,53 @@ static void CUBE_ONE_DRAW(int no)
 	CUBE *cube = &(ric.cube[no]);
 
 	glBegin(GL_QUADS);
-	    glNormal3f(0.0,  1.0, 0.0);
-	    glColor4f(COLOR[cube->now_color[0]].r,COLOR[cube->now_color[0]].g,
-				  COLOR[cube->now_color[0]].b,1.0);
-	    glVertex3f(-harf, harf,-harf);
+	glNormal3f(0.0,  1.0, 0.0);
+	glColor4f(COLOR[cube->now_color[0]].r,COLOR[cube->now_color[0]].g,COLOR[cube->now_color[0]].b,1.0);
+	glVertex3f(-harf, harf,-harf);
         glVertex3f(-harf, harf, harf);
         glVertex3f( harf, harf, harf);
         glVertex3f( harf, harf,-harf);
 	glEnd();
 
 	glBegin(GL_QUADS);
-	    glColor4f(COLOR[cube->now_color[1]].r,COLOR[cube->now_color[1]].g,
-				  COLOR[cube->now_color[1]].b,1.0);
+	glColor4f(COLOR[cube->now_color[1]].r,COLOR[cube->now_color[1]].g,COLOR[cube->now_color[1]].b,1.0);
         glNormal3f(1.0, 0.0, 0.0);
-	    glVertex3f( harf,-harf, harf);
+	glVertex3f( harf,-harf, harf);
         glVertex3f( harf,-harf,-harf);
         glVertex3f( harf, harf,-harf);
         glVertex3f( harf, harf, harf);
 	glEnd();
 
 	glBegin(GL_QUADS);
-	    glColor4f(COLOR[cube->now_color[2]].r,COLOR[cube->now_color[2]].g,
-				  COLOR[cube->now_color[2]].b,1.0);
+	glColor4f(COLOR[cube->now_color[2]].r,COLOR[cube->now_color[2]].g,COLOR[cube->now_color[2]].b,1.0);
         glNormal3f(0.0, 0.0,  1.0);
-	    glVertex3f(-harf,-harf, harf);
+	glVertex3f(-harf,-harf, harf);
         glVertex3f( harf,-harf, harf);
         glVertex3f( harf, harf, harf);
         glVertex3f(-harf, harf, harf);
 	glEnd();
 
 	glBegin(GL_QUADS);
-	    glColor4f(COLOR[cube->now_color[3]].r,COLOR[cube->now_color[3]].g,
-				  COLOR[cube->now_color[3]].b,1.0);
+	glColor4f(COLOR[cube->now_color[3]].r,COLOR[cube->now_color[3]].g,COLOR[cube->now_color[3]].b,1.0);
         glNormal3f(-1.0, 0.0, 0.0);
-	    glVertex3f(-harf,-harf,-harf);
+	glVertex3f(-harf,-harf,-harf);
         glVertex3f(-harf,-harf, harf);
         glVertex3f(-harf, harf, harf);
         glVertex3f(-harf, harf,-harf);
 	glEnd();
 
 	glBegin(GL_QUADS);
-	    glColor4f(COLOR[cube->now_color[4]].r,COLOR[cube->now_color[4]].g,
-				  COLOR[cube->now_color[4]].b,1.0);
+	glColor4f(COLOR[cube->now_color[4]].r,COLOR[cube->now_color[4]].g,COLOR[cube->now_color[4]].b,1.0);
         glNormal3f(0.0, 0.0, -1.0);
-	    glVertex3f( harf,-harf,-harf);
+	glVertex3f( harf,-harf,-harf);
         glVertex3f(-harf,-harf,-harf);
         glVertex3f(-harf, harf,-harf);
         glVertex3f( harf, harf,-harf);
 	glEnd();
 	glBegin(GL_QUADS);
-	    glColor4f(COLOR[cube->now_color[5]].r,COLOR[cube->now_color[5]].g,
-				  COLOR[cube->now_color[5]].b,1.0);
+	glColor4f(COLOR[cube->now_color[5]].r,COLOR[cube->now_color[5]].g,COLOR[cube->now_color[5]].b,1.0);
         glNormal3f(0.0, -1.0, 0.0);
-	    glVertex3f( harf,-harf, harf);
+	glVertex3f( harf,-harf, harf);
         glVertex3f(-harf,-harf, harf);
         glVertex3f(-harf,-harf,-harf);
         glVertex3f( harf,-harf,-harf);
