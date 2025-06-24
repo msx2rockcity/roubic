@@ -661,9 +661,6 @@ int main(int argc,char** argv)
 	auxKeyFunc(AUX_r,RANDOM_CUBE);                       /* キーのｒを押すとランダムにしてくれる */
 	
 	auxGetMouseLoc(&x,&y);
-	ric.center_spin_x = 0;/*ric.center_spin_x;*/
-	ric.center_spin_y = 0;/*ric.center_spin_y;*/
-	ric.center_spin_z = 0;
 		
 	/* メイン処理へ */
 	auxMainLoop(ALL_DRAW);
